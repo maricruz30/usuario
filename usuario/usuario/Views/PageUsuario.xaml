@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="usuario.Views.PageUsuario">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="INGRESE SU INFORMACIÓN"
+                   
+                 Margin="10,30,10,20" 
+                 FontSize="35"
+                  
+                 HorizontalTextAlignment="Center"/>
+            
+            <Label Text="Nombre" 
+                   Margin="10,10,10,-5" />
+
+            <Entry x:Name="txtNombre" 
+                    BackgroundColor="CadetBlue"
+                   Keyboard="Text" 
+                   TextColor="black"
+                   Margin="10,10,10,10"
+                />
+            
+            <Label Text="Apellidos:" 
+                   Margin="10,10,10,-5" />
+
+            <Entry x:Name="txtApellidos" 
+                    BackgroundColor="CadetBlue"
+                   Keyboard="Text" 
+                   TextColor="black"
+                   Margin="10,10,10,10"/>
+            
+            <Label Text="Edad:" 
+                   Margin="10,10,10,-5" />
+
+            <Entry x:Name="txtEdad" 
+                    BackgroundColor="CadetBlue"
+                   Keyboard="Numeric" 
+                   TextColor="black"
+                   Margin="10,10,10,10" />
+
+            <Label Text="Correo Electronico:" 
+                   Margin="10,10,10,-5"  />
+
+            <Entry x:Name="txtEmails" 
+                    BackgroundColor="CadetBlue"
+                    Keyboard="Email"
+                   TextColor="black"
+                   Margin="10,10,10,10"/>
+
+            <Button x:Name="btnEnviar" Text="Enviar Información" Clicked="btnEnviar_Clicked"
+                    Margin="10,30,10,10"
+                    BackgroundColor="LightSalmon"
+                    />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

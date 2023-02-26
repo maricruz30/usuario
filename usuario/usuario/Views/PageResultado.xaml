@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="usuario.Views.PageResultado">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#A68230" Padding="40" CornerRadius="0">
+                <Label Text="Welcome!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+
+            <Label FontSize="20" Margin="10,20,5,5" >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Nombre: " TextDecorations="Underline" TextColor="#A68230"/>
+                        <Span Text="{Binding Nombre}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label FontSize="20" Margin="10,20,5,5">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Apellidos: " TextDecorations="Underline" TextColor="#A68230"/>
+                        <Span Text="{Binding Apellidos}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label FontSize="20" Margin="10,20,5,5">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Edad: " TextDecorations="Underline" TextColor="#A68230"/>
+                        <Span Text="{Binding Edad}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label FontSize="20" Margin="10,20,5,5">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Correo Electronico: " TextDecorations="Underline" TextColor="#A68230"/>
+                        <Span Text="{Binding Correo}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
